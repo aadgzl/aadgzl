@@ -1,0 +1,28 @@
+mport java.util.Scanner;
+public class Zara {
+    public static void main(String[] args) {
+        // Matematik,Fizik,Kimya,Turkce,Tarih,Muzik
+        int Matematik,Fizik,Kimya,Turkce, Tarih, Muzik;
+        //Scenner sınıfını tanımladık
+        Scanner input = new Scanner(System.in);
+        //Kullanıcıdan değerleri al
+        System.out.println("Matematik Notunuz:");
+        Matematik= input.nextInt();
+
+        System.out.println("Fizik Notunuz:");
+        Fizik= input.nextInt();
+
+        System.out.println("Kimya Notunuz:");
+        Kimya = input.nextInt();
+        System.out.println("Turkce Notunuz:");
+        Turkce= input.nextInt();
+        System.out.println("Tarih Notunuz:");
+        Tarih = input.nextInt();
+        System.out.println("Muzik Notunuz:");
+        Muzik=input.nextInt();
+        //Ortalama bul
+        int toplam  = Matematik + Fizik + Kimya + Turkce + Tarih + Muzik;
+        double sonuc= toplam/6;
+        System.out.println("Ortalama:" + sonuc);
+        String ortalama = (sonuc >= 50) ? "Geçtiniz" : "Kaldınız";
+        System.out.println(ortalama);
